@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
 }
@@ -11,6 +12,28 @@ body {
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+<<<<<<< HEAD
+=======
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #bab3ae transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #bab3ae;
+  border-radius: 20px;
+  border: 3px solid transparent;
+>>>>>>> fc96c61fc5b6409e5fe6464866045fe19e25fea2
 }
 
 * {
