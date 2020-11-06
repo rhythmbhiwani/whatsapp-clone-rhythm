@@ -9,7 +9,7 @@ function SidebarChat({ id, name, addNewChat }) {
     const [messages, setMessages] = useState('');
 
     useEffect(() => {
-        setSeed(Math.floor(Math.random() * 5000));
+        setSeed(id);
     }, []);
 
     useEffect(() => {

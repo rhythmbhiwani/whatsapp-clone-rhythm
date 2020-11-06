@@ -5,7 +5,7 @@ a {
 
 .sidebarChat {
     display: flex;
-    padding: 20px;
+    padding: 5px 20px;
     cursor: pointer;
     border-bottom: 1px solid #F6F6F6;
 }
@@ -15,8 +15,19 @@ a {
 }
 
 .sidebarChat__info>h2 {
+    max-width: 15vw;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
     font-size: 16px;
     margin-bottom: 8px;
+}
+
+.sidebarChat__info>p {
+    max-width: 15vw;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .sidebarChat__info {

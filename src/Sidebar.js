@@ -3,7 +3,7 @@ import './Sidebar.css';
 import { Avatar, IconButton } from '@material-ui/core'
 import { Chat, DonutLarge, MoreVert, SearchOutlined } from '@material-ui/icons';
 import SidebarChat from './SidebarChat';
-import db from './firebase';
+import db, { auth } from './firebase';
 import { useStateValue } from './StateProvider';
 
 function Sidebar() {
@@ -37,7 +37,7 @@ function Sidebar() {
                     <IconButton>
                         <Chat />
                     </IconButton>
-                    <IconButton>
+                    <IconButton onClick={() => auth.signOut()}>
                         <MoreVert />
                     </IconButton>
                 </div>
