@@ -1,22 +1,25 @@
 {
   "files": {
-    "main.css": "/whatsapp-clone-rhythm/static/css/main.bcb3f0c8.chunk.css",
-    "main.js": "/whatsapp-clone-rhythm/static/js/main.72368a40.chunk.js",
-    "main.js.map": "/whatsapp-clone-rhythm/static/js/main.72368a40.chunk.js.map",
+    "main.css": "/whatsapp-clone-rhythm/static/css/main.39b31a75.chunk.css",
+    "main.js": "/whatsapp-clone-rhythm/static/js/main.01142c34.chunk.js",
+    "main.js.map": "/whatsapp-clone-rhythm/static/js/main.01142c34.chunk.js.map",
     "runtime-main.js": "/whatsapp-clone-rhythm/static/js/runtime-main.0b13aeb7.js",
     "runtime-main.js.map": "/whatsapp-clone-rhythm/static/js/runtime-main.0b13aeb7.js.map",
-    "static/js/2.77b648fd.chunk.js": "/whatsapp-clone-rhythm/static/js/2.77b648fd.chunk.js",
-    "static/js/2.77b648fd.chunk.js.map": "/whatsapp-clone-rhythm/static/js/2.77b648fd.chunk.js.map",
+    "static/css/2.f1b50ea8.chunk.css": "/whatsapp-clone-rhythm/static/css/2.f1b50ea8.chunk.css",
+    "static/js/2.3ca80390.chunk.js": "/whatsapp-clone-rhythm/static/js/2.3ca80390.chunk.js",
+    "static/js/2.3ca80390.chunk.js.map": "/whatsapp-clone-rhythm/static/js/2.3ca80390.chunk.js.map",
     "index.html": "/whatsapp-clone-rhythm/index.html",
-    "precache-manifest.41c837db6b49ccd1a4b401d5e2278eb1.js": "/whatsapp-clone-rhythm/precache-manifest.41c837db6b49ccd1a4b401d5e2278eb1.js",
+    "precache-manifest.0059cbf6e6489d3dd64fdbb0b722ff62.js": "/whatsapp-clone-rhythm/precache-manifest.0059cbf6e6489d3dd64fdbb0b722ff62.js",
     "service-worker.js": "/whatsapp-clone-rhythm/service-worker.js",
-    "static/css/main.bcb3f0c8.chunk.css.map": "/whatsapp-clone-rhythm/static/css/main.bcb3f0c8.chunk.css.map",
-    "static/js/2.77b648fd.chunk.js.LICENSE.txt": "/whatsapp-clone-rhythm/static/js/2.77b648fd.chunk.js.LICENSE.txt"
+    "static/css/2.f1b50ea8.chunk.css.map": "/whatsapp-clone-rhythm/static/css/2.f1b50ea8.chunk.css.map",
+    "static/css/main.39b31a75.chunk.css.map": "/whatsapp-clone-rhythm/static/css/main.39b31a75.chunk.css.map",
+    "static/js/2.3ca80390.chunk.js.LICENSE.txt": "/whatsapp-clone-rhythm/static/js/2.3ca80390.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.0b13aeb7.js",
-    "static/js/2.77b648fd.chunk.js",
-    "static/css/main.bcb3f0c8.chunk.css",
-    "static/js/main.72368a40.chunk.js"
+    "static/css/2.f1b50ea8.chunk.css",
+    "static/js/2.3ca80390.chunk.js",
+    "static/css/main.39b31a75.chunk.css",
+    "static/js/main.01142c34.chunk.js"
   ]
 }
