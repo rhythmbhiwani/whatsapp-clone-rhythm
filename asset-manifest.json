@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/whatsapp-clone-rhythm/static/css/main.39b31a75.chunk.css",
-    "main.js": "/whatsapp-clone-rhythm/static/js/main.01142c34.chunk.js",
-    "main.js.map": "/whatsapp-clone-rhythm/static/js/main.01142c34.chunk.js.map",
+    "main.js": "/whatsapp-clone-rhythm/static/js/main.b9f9dc84.chunk.js",
+    "main.js.map": "/whatsapp-clone-rhythm/static/js/main.b9f9dc84.chunk.js.map",
     "runtime-main.js": "/whatsapp-clone-rhythm/static/js/runtime-main.0b13aeb7.js",
     "runtime-main.js.map": "/whatsapp-clone-rhythm/static/js/runtime-main.0b13aeb7.js.map",
     "static/css/2.f1b50ea8.chunk.css": "/whatsapp-clone-rhythm/static/css/2.f1b50ea8.chunk.css",
-    "static/js/2.3ca80390.chunk.js": "/whatsapp-clone-rhythm/static/js/2.3ca80390.chunk.js",
-    "static/js/2.3ca80390.chunk.js.map": "/whatsapp-clone-rhythm/static/js/2.3ca80390.chunk.js.map",
+    "static/js/2.4a4add9c.chunk.js": "/whatsapp-clone-rhythm/static/js/2.4a4add9c.chunk.js",
+    "static/js/2.4a4add9c.chunk.js.map": "/whatsapp-clone-rhythm/static/js/2.4a4add9c.chunk.js.map",
     "index.html": "/whatsapp-clone-rhythm/index.html",
-    "precache-manifest.0059cbf6e6489d3dd64fdbb0b722ff62.js": "/whatsapp-clone-rhythm/precache-manifest.0059cbf6e6489d3dd64fdbb0b722ff62.js",
+    "precache-manifest.fcb67560d038c41075a3a87e12f03a82.js": "/whatsapp-clone-rhythm/precache-manifest.fcb67560d038c41075a3a87e12f03a82.js",
     "service-worker.js": "/whatsapp-clone-rhythm/service-worker.js",
     "static/css/2.f1b50ea8.chunk.css.map": "/whatsapp-clone-rhythm/static/css/2.f1b50ea8.chunk.css.map",
     "static/css/main.39b31a75.chunk.css.map": "/whatsapp-clone-rhythm/static/css/main.39b31a75.chunk.css.map",
-    "static/js/2.3ca80390.chunk.js.LICENSE.txt": "/whatsapp-clone-rhythm/static/js/2.3ca80390.chunk.js.LICENSE.txt"
+    "static/js/2.4a4add9c.chunk.js.LICENSE.txt": "/whatsapp-clone-rhythm/static/js/2.4a4add9c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.0b13aeb7.js",
     "static/css/2.f1b50ea8.chunk.css",
-    "static/js/2.3ca80390.chunk.js",
+    "static/js/2.4a4add9c.chunk.js",
     "static/css/main.39b31a75.chunk.css",
-    "static/js/main.01142c34.chunk.js"
+    "static/js/main.b9f9dc84.chunk.js"
   ]
 }
