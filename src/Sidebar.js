@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import './Sidebar.css';
-import { Avatar, IconButton } from '@material-ui/core'
+import { Avatar, Button, IconButton } from '@material-ui/core'
 import { Chat, DonutLarge, MoreVert, SearchOutlined } from '@material-ui/icons';
 import SidebarChat from './SidebarChat';
 import db, { auth } from './firebase';
+import Popup from 'reactjs-popup';
 import { useStateValue } from './StateProvider';
+import 'reactjs-popup/dist/index.css';
 
 function Sidebar() {
     const [rooms, setRooms] = useState([]);
@@ -37,9 +39,21 @@ function Sidebar() {
                     <IconButton>
                         <Chat />
                     </IconButton>
-                    <IconButton onClick={() => auth.signOut()}>
-                        <MoreVert />
-                    </IconButton>
+                    <Popup position="bottom right" contentStyle={{ width: "fit-content" }} trigger={
+                        <IconButton>
+                            <MoreVert />
+                        </IconButton>
+                    } arrow={false}>
+                        <div className="menu">
+                            <div className="menu-item"><Button style={{ width: "150px" }}>New group</Button></div>
+                            <div className="menu-item"><Button style={{ width: "150px" }}>Profile</Button></div>
+                            <div className="menu-item"><Button style={{ width: "150px" }}>Archived</Button></div>
+                            <div className="menu-item"><Button style={{ width: "150px" }}>Starred</Button></div>
+                            <div className="menu-item"><Button style={{ width: "150px" }}>Settings</Button></div>
+                            <div className="menu-item"><Button style={{ width: "150px" }} onClick={() => auth.signOut()}>Logout</Button></div>
+                        </div>
+                    </Popup>
+
                 </div>
             </div>
             <div className="sidebar__search">

@@ -1,10 +1,12 @@
-import { Avatar, IconButton } from '@material-ui/core';
-import { AttachFile, InsertEmoticon, Mic, MoreVert, SearchOutlined } from '@material-ui/icons';
+import { Avatar, Button, IconButton } from '@material-ui/core';
+import { AttachFile, InsertEmoticon, Mic, MoreVert, SearchOutlined, AccountCircleRounded, CameraAlt, Photo, InsertDriveFile, Videocam } from '@material-ui/icons';
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import './Chat.css';
 import db from './firebase';
 import { useStateValue } from './StateProvider';
+import Popup from 'reactjs-popup';
+import 'reactjs-popup/dist/index.css';
 import firebase from 'firebase';
 
 function Chat() {
@@ -46,15 +48,15 @@ function Chat() {
 
     const sendMessage = (e) => {
         e.preventDefault();
-            if (input.trim() != "") {
-                db.collection('rooms').doc(roomId).collection('messages').add({
-                    name: user.displayName,
-                    email: user.email,
-                    timestamp: firebase.firestore.FieldValue.serverTimestamp(),
-                    message: input,
-                });
-            }
-            setInput('');
+        if (input.trim() != "") {
+            db.collection('rooms').doc(roomId).collection('messages').add({
+                name: user.displayName,
+                email: user.email,
+                timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+                message: input,
+            });
+        }
+        setInput('');
     };
 
     return (
@@ -70,9 +72,19 @@ function Chat() {
                     <IconButton>
                         <SearchOutlined />
                     </IconButton>
-                    <IconButton>
-                        <MoreVert />
-                    </IconButton>
+                    <Popup position="bottom right" contentStyle={{ width: "fit-content" }} trigger={
+                        <IconButton>
+                            <MoreVert />
+                        </IconButton>
+                    } arrow={false}>
+                        <div className="menu">
+                            <div className="menu-item"><Button >Contact info</Button></div>
+                            <div className="menu-item"><Button>Select messages</Button></div>
+                            <div className="menu-item"><Button>Mute notifications</Button></div>
+                            <div className="menu-item"><Button>Clear messages</Button></div>
+                            <div className="menu-item"><Button>Delete Chat</Button></div>
+                        </div>
+                    </Popup>
                 </div>
             </div>
 
@@ -90,11 +102,51 @@ function Chat() {
                 <IconButton>
                     <InsertEmoticon />
                 </IconButton>
-                <IconButton>
-                    <AttachFile />
-                </IconButton>
+                <Popup position="top center" contentStyle={{ width: "fit-content", backgroundColor: 'transparent', padding: "0px", border: 'none', boxShadow: 'none' }} trigger={
+                    <IconButton>
+                        <AttachFile />
+                    </IconButton>
+                } arrow={false}>
+                    <div className="menu">
+                        <div className="menu-item"><IconButton>
+                            <Videocam style={{
+                                background: "rgb(64,121,236)",
+                                background: "linear-gradient(180deg, rgba(64,121,236,1) 50%, rgba(57,108,211,1) 50%)", fill: "white", padding:
+                                    "15px", borderRadius: "100%"
+                            }} />
+                        </IconButton></div>
+                        <div className="menu-item"><IconButton>
+                            <AccountCircleRounded style={{
+                                background: "rgb(7,149,220)",
+                                background: "linear-gradient(180deg, rgba(7,149,220,1) 50%, rgba(14,171,244,1) 50%)", fill: "white", padding:
+                                    "15px", borderRadius: "100%"
+                            }} />
+                        </IconButton></div>
+                        <div className="menu-item"><IconButton>
+                            <InsertDriveFile style={{
+                                background: "rgb(81,87,174)",
+                                background: "linear-gradient(180deg, rgba(81,87,174,1) 50%, rgba(95,102,205,1) 50%)", fill: "white", padding:
+                                    "15px", borderRadius: "100%"
+                            }} />
+                        </IconButton></div>
+                        <div className="menu-item"><IconButton>
+                            <CameraAlt style={{
+                                background: "rgb(211,57,109)",
+                                background: "linear-gradient(180deg, rgba(211,57,109,1) 50%, rgba(236,64,122,1) 50%)", fill: "white", padding:
+                                    "15px", borderRadius: "100%"
+                            }} />
+                        </IconButton></div>
+                        <div className="menu-item"><IconButton>
+                            <Photo style={{
+                                background: "rgb(172,68,207)",
+                                background: "linear-gradient(180deg, rgba(172,68,207,1) 50%, rgba(191,89,207,1) 50%)", fill: "white", padding:
+                                    "15px", borderRadius: "100%"
+                            }} />
+                        </IconButton></div>
+                    </div>
+                </Popup>
                 <form>
-                    <input  rows="1" value={input} onChange={(e) => setInput(e.target.value)} type="text" placeholder="Type a message" />
+                    <input rows="1" value={input} onChange={(e) => setInput(e.target.value)} type="text" placeholder="Type a message" />
                     <button onClick={sendMessage} type="submit">Submit</button>
                 </form>
                 <IconButton>
