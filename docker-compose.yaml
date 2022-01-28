@@ -1,0 +1,16 @@
+version: "3.3"
+services:
+  webserver:
+    build: .
+    restart: always
+    environment:
+      REACT_APP_apiKey: XXXXXXXXXX
+      REACT_APP_authDomain: XXXXXXXXXX
+      REACT_APP_databaseURL: XXXXXXXXXX
+      REACT_APP_projectId: XXXXXXXXXX
+      REACT_APP_storageBucket: XXXXXXXXXX
+      REACT_APP_messagingSenderId: XXXXXXXXXX
+      REACT_APP_appId: XXXXXXXXXX
+      REACT_APP_measurementId: XXXXXXXXXX
+    ports:
+      - 5000:3000
