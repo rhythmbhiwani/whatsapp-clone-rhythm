@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/whatsapp-clone-rhythm/static/css/main.39b31a75.chunk.css",
-    "main.js": "/whatsapp-clone-rhythm/static/js/main.b9f9dc84.chunk.js",
-    "main.js.map": "/whatsapp-clone-rhythm/static/js/main.b9f9dc84.chunk.js.map",
-    "runtime-main.js": "/whatsapp-clone-rhythm/static/js/runtime-main.0b13aeb7.js",
-    "runtime-main.js.map": "/whatsapp-clone-rhythm/static/js/runtime-main.0b13aeb7.js.map",
-    "static/css/2.f1b50ea8.chunk.css": "/whatsapp-clone-rhythm/static/css/2.f1b50ea8.chunk.css",
-    "static/js/2.4a4add9c.chunk.js": "/whatsapp-clone-rhythm/static/js/2.4a4add9c.chunk.js",
-    "static/js/2.4a4add9c.chunk.js.map": "/whatsapp-clone-rhythm/static/js/2.4a4add9c.chunk.js.map",
-    "index.html": "/whatsapp-clone-rhythm/index.html",
-    "precache-manifest.b6b9a272ef31a2984c8d477b2ea29bdd.js": "/whatsapp-clone-rhythm/precache-manifest.b6b9a272ef31a2984c8d477b2ea29bdd.js",
-    "service-worker.js": "/whatsapp-clone-rhythm/service-worker.js",
-    "static/css/2.f1b50ea8.chunk.css.map": "/whatsapp-clone-rhythm/static/css/2.f1b50ea8.chunk.css.map",
-    "static/css/main.39b31a75.chunk.css.map": "/whatsapp-clone-rhythm/static/css/main.39b31a75.chunk.css.map",
-    "static/js/2.4a4add9c.chunk.js.LICENSE.txt": "/whatsapp-clone-rhythm/static/js/2.4a4add9c.chunk.js.LICENSE.txt"
+    "main.css": "/static/css/main.85acdf1e.chunk.css",
+    "main.js": "/static/js/main.0ca97f06.chunk.js",
+    "main.js.map": "/static/js/main.0ca97f06.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.67bfdc7e.js",
+    "runtime-main.js.map": "/static/js/runtime-main.67bfdc7e.js.map",
+    "static/css/2.f1b50ea8.chunk.css": "/static/css/2.f1b50ea8.chunk.css",
+    "static/js/2.a111bee9.chunk.js": "/static/js/2.a111bee9.chunk.js",
+    "static/js/2.a111bee9.chunk.js.map": "/static/js/2.a111bee9.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.830fd3235fbd2c23eb69bd5ab163df8a.js": "/precache-manifest.830fd3235fbd2c23eb69bd5ab163df8a.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.f1b50ea8.chunk.css.map": "/static/css/2.f1b50ea8.chunk.css.map",
+    "static/css/main.85acdf1e.chunk.css.map": "/static/css/main.85acdf1e.chunk.css.map",
+    "static/js/2.a111bee9.chunk.js.LICENSE.txt": "/static/js/2.a111bee9.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.0b13aeb7.js",
+    "static/js/runtime-main.67bfdc7e.js",
     "static/css/2.f1b50ea8.chunk.css",
-    "static/js/2.4a4add9c.chunk.js",
-    "static/css/main.39b31a75.chunk.css",
-    "static/js/main.b9f9dc84.chunk.js"
+    "static/js/2.a111bee9.chunk.js",
+    "static/css/main.85acdf1e.chunk.css",
+    "static/js/main.0ca97f06.chunk.js"
   ]
 }
