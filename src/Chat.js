@@ -26,7 +26,7 @@ function Chat() {
   const [roomName, setRoomName] = useState("");
   const [messages, setMessages] = useState([]);
   const [nameColor, setNameColor] = useState("");
-  const [{ user }, dispatch] = useStateValue();
+  const [{ user }] = useStateValue();
   const { roomId } = useParams();
   const downRef = useRef(null);
   const colorsCollection = [
@@ -76,6 +76,7 @@ function Chat() {
             });
         });
     }
+    // eslint-disable-next-line
   }, [roomId]);
 
   useEffect(() => {
@@ -84,7 +85,7 @@ function Chat() {
 
   const sendMessage = (e) => {
     e.preventDefault();
-    if (input.trim() != "") {
+    if (input.trim() !== "") {
       db.collection("rooms").doc(roomId).collection("messages").add({
         name: user.displayName,
         email: user.email,
@@ -151,7 +152,7 @@ function Chat() {
           <p
             key={message.timestamp?.toString() + message.name}
             className={`chat__message ${
-              message.email == user.email && "chat__reciever"
+              message.email === user.email && "chat__reciever"
             }`}
           >
             <span style={{ color: nameColor }} className="chat__name">
@@ -191,7 +192,6 @@ function Chat() {
               <IconButton>
                 <Videocam
                   style={{
-                    background: "rgb(64,121,236)",
                     background:
                       "linear-gradient(180deg, rgba(64,121,236,1) 50%, rgba(57,108,211,1) 50%)",
                     fill: "white",
@@ -205,7 +205,6 @@ function Chat() {
               <IconButton>
                 <AccountCircleRounded
                   style={{
-                    background: "rgb(7,149,220)",
                     background:
                       "linear-gradient(180deg, rgba(7,149,220,1) 50%, rgba(14,171,244,1) 50%)",
                     fill: "white",
@@ -219,7 +218,6 @@ function Chat() {
               <IconButton>
                 <InsertDriveFile
                   style={{
-                    background: "rgb(81,87,174)",
                     background:
                       "linear-gradient(180deg, rgba(81,87,174,1) 50%, rgba(95,102,205,1) 50%)",
                     fill: "white",
@@ -233,7 +231,6 @@ function Chat() {
               <IconButton>
                 <CameraAlt
                   style={{
-                    background: "rgb(211,57,109)",
                     background:
                       "linear-gradient(180deg, rgba(211,57,109,1) 50%, rgba(236,64,122,1) 50%)",
                     fill: "white",
@@ -247,7 +244,6 @@ function Chat() {
               <IconButton>
                 <Photo
                   style={{
-                    background: "rgb(172,68,207)",
                     background:
                       "linear-gradient(180deg, rgba(172,68,207,1) 50%, rgba(191,89,207,1) 50%)",
                     fill: "white",
