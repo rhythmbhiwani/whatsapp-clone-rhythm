@@ -3,14 +3,14 @@ import "firebase/auth";
 import "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAu0fGlvLP7qhpWHC5rpuytR_2fRliiVPA",
-  authDomain: "whatsapp-clone-rhythm.firebaseapp.com",
-  databaseURL: "https://whatsapp-clone-rhythm.firebaseio.com",
-  projectId: "whatsapp-clone-rhythm",
-  storageBucket: "whatsapp-clone-rhythm.appspot.com",
-  messagingSenderId: "1070517561603",
-  appId: "1:1070517561603:web:4a3deeb8556d2dd5952136",
-  measurementId: "G-E9DT699RVT",
+  apiKey: process.env.REACT_APP_APIKEY,
+  authDomain: process.env.REACT_APP_AUTHDOMAIN,
+  databaseURL: process.env.REACT_APP_DATABASEURL,
+  projectId: process.env.REACT_APP_PROJECTID,
+  storageBucket: process.env.REACT_APP_STORAGEBUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGINGSENDERID,
+  appId: process.env.REACT_APP_APPID,
+  measurementId: process.env.REACT_APP_MEASUREMENTID,
 };
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);
