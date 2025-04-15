@@ -99,7 +99,7 @@ function Chat() {
   return (
     <div className="chat">
       <div className="chat__header">
-        <Avatar src={`https://avatars.dicebear.com/api/human/${seed}.svg`} />
+        <Avatar src={`https://api.dicebear.com/9.x/pixel-art/svg?seed=${seed}`} />
         <div className="chat__headerInfo">
           <h3>{roomName}</h3>
           {messages.length > 0 && (
